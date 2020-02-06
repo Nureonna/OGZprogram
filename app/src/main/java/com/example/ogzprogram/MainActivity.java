@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                float angleValue = calculation.Ak(Float.valueOf(xOP.getText().toString()),
+                float angleValue = calculation.calculateAngle(Float.valueOf(xOP.getText().toString()),
                         Float.valueOf(yOP.getText().toString()),
                         Float.valueOf(xTar.getText().toString()),
                         Float.valueOf(yTar.getText().toString()));
 
                 angle.setText(String.valueOf(angleValue));
 
-                float distValue = calculation.Dk(Float.valueOf(xOP.getText().toString()),
+                float distValue = calculation.calculateDistance(Float.valueOf(xOP.getText().toString()),
                         Float.valueOf(yOP.getText().toString()),
                         Float.valueOf(xTar.getText().toString()),
                         Float.valueOf(yTar.getText().toString()));
